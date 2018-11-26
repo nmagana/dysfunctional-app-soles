@@ -1,17 +1,16 @@
-button {
-    cursor: pointer;
-    outline: none;
-}
-
-button:disabled {
-    cursor: default;
-}
-
 .button {
+    opacity: 1;
     background: $light-coral;
     color: $azure;
     font-weight: 900;
     border: none;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 200ms ease-in-out;
+}
+
+button:disabled {
+    cursor: default;
 }
 
 .big-button {
