@@ -24,3 +24,9 @@
     font-size: $m-size;
     font-style: italic;
 }
+
+@media (max-width: 20rem) {
+    .widget-header {
+        flex-direction: column-reverse;
+    }
+}

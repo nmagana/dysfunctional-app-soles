@@ -9,10 +9,21 @@
 
 .add-option {
     display: flex;
-    height: $l-size;
+    height: 6.4rem;
 }
 
 .add-option__input {
     flex-grow: 1;
     font-size: $m-size;
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .add-option {
+        flex-direction: column;
+        height: 9rem;
+    }
+
+    .add-option__input {
+        flex-grow: 1;
+    }
 }

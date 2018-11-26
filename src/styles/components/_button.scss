@@ -16,7 +16,7 @@ button:disabled {
 .big-button {
     width: 100%;
     padding: $m-size;
-    font-size: $l-size;
+    font-size: 3rem;
     border-bottom: $s-size solid $dark-coral;
 }
 
@@ -60,4 +60,10 @@ button:active {
 .button--exit-modal,
 .button--add_option {
     border-bottom: $xs-size solid $dark-coral;
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .button--add_option {
+        flex-grow: 1;
+    }
 }
