@@ -1,0 +1,7 @@
+.vscode
+node_modules
+*.log
+React/app/public/bundle.js
+React/app/public/bundle.js.map
+React/app/public/styles.css
+React/app/public/styles.css.map
