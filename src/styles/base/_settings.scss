@@ -1,0 +1,18 @@
+// Colors
+$light-blue: lightblue;
+$light-coral: lightcoral;
+$dark-coral: darken($color: $light-coral, $amount: 5%);
+$azure: azure;
+$dark-blue: lighten($color: $light-blue, $amount: 10%);
+$black: black;
+
+// spacing
+// Font Size
+$l-size: 5rem;
+$xm-size: 3.5rem;
+$m-size: 2rem;
+$s-size: 1rem;
+$xs-size: 0.5rem;
+$xxs-size: 0.1rem;
+
+$footer-height: $l-size;

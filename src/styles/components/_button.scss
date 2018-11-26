@@ -1,0 +1,64 @@
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.button {
+    background: $light-coral;
+    color: $azure;
+    font-weight: 900;
+    border: none;
+}
+
+.big-button {
+    width: 100%;
+    padding: $m-size;
+    font-size: $l-size;
+    border-bottom: $s-size solid $dark-coral;
+}
+
+button:hover {
+    opacity: .8;
+    transition: opacity 225ms ease-in-out;
+}
+
+.big-button:disabled {
+    opacity: .5;
+    transition: opacity 250ms ease-in-out;
+}
+
+button:active {
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
+}
+
+.button--add_option {
+    padding: 0 $xm-size;
+}
+
+.button--remove_all {
+    padding: 0;
+}
+
+.button--remove-option {
+    padding: 0 $m-size;
+}
+
+.button--remove-option, 
+.button--remove_all {
+    background: none;
+    color: $light-coral;
+}
+
+.button--exit-modal {
+    padding: $s-size $xm-size;
+}
+
+.button--exit-modal,
+.button--add_option {
+    border-bottom: $xs-size solid $dark-coral;
+}

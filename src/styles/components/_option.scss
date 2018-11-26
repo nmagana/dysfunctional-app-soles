@@ -1,0 +1,19 @@
+.option {
+    display: flex;
+    justify-content: space-between;
+    padding: $m-size;
+    border-bottom: $xxs-size solid $black;
+    font-size: $m-size; 
+    word-wrap: normal;
+    word-break: break-all;
+    hyphens: auto; 
+}
+
+.option__text {
+    font-weight: bold;
+    margin: 0;  
+}
+
+input:focus {
+    outline: 0;
+}

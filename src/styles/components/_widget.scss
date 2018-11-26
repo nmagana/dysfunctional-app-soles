@@ -1,0 +1,26 @@
+.widget {
+    background: $dark-blue;
+}
+
+.widget-header {
+    background: $light-blue;
+    padding: $m-size;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: $xxs-size solid $black;
+    font-size: $m-size;
+}
+
+.widget-header__title {
+    margin: 0;
+}
+
+.widget__message {
+    margin: 0;
+    padding: $xm-size;
+    text-align: center;
+    border-bottom: $xxs-size solid $black;
+    font-weight: bold;
+    font-size: $m-size;
+    font-style: italic;
+}
