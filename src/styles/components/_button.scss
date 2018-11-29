@@ -7,6 +7,8 @@
     cursor: pointer;
     outline: none;
     transition: opacity 200ms ease-in-out;
+    text-align: center;
+    
 }
 
 button:disabled {
@@ -65,5 +67,15 @@ button:active {
 @media (max-width: $desktop-breakpoint) {
     .button--add_option {
         flex-grow: 1;
+    }
+
+    .big-button {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 13rem) {
+    .button--exit-modal {
+        padding: 0;
     }
 }

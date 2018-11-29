@@ -19,3 +19,9 @@ body {
 *:after {
   box-sizing: inherit;
 }
+
+.option, .modal, .header, .big-button {
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}

@@ -27,6 +27,7 @@
     padding: $s-size;
     max-width: 60%;
     max-height: 80%;
+    margin: 0 auto;
 }
 
 .modal__title {
@@ -36,8 +37,5 @@
 .modal__option {
     font-weight: bold;
     font-size: $xm-size;
-    overflow-wrap: normal;
-    word-wrap: normal;
-    word-break: break-all;
-    hyphens: auto; 
+
 }

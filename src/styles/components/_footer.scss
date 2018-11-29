@@ -7,8 +7,11 @@
     left: 0;
     height: $footer-height;
     font-style: italic;
+    font-size: $m-size;
 }
 
-.footer__copyright {
-    font-size: $m-size;
+@media (max-width: 20rem) {
+    .footer {
+        font-size: 1.4rem;
+    }
 }
