@@ -18,15 +18,14 @@
 
 .modal {
     opacity: 1;
-    border: none;
     outline: none;
     background: $light-blue;
     color: $black;
     border: $s-size solid $light-coral;
     text-align: center;
     padding: $s-size;
-    max-width: 60%;
-    max-height: 80%;
+    max-width: 70rem;
+    max-height: 70rem;
     margin: 0 auto;
 }
 

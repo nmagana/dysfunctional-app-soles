@@ -7,7 +7,7 @@ export default class Options extends React.Component {
                                             deleteOption={this.props.deleteOption} 
                                             key={option} 
                                             option={option}
-                                            index={index}
+                                            index={index + 1}
                                         />);
     }
     

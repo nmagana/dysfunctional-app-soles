@@ -10,7 +10,8 @@ import OptionModal from './OptionModal';
 export default class DysfunctionalApp extends React.Component {
     state = {
         options: this.props.options,
-        selectedOption: undefined
+        selectedOption: undefined,
+        modalOn: false
     };
     subtitle = 'Let the computer choose!';
 
@@ -49,7 +50,7 @@ export default class DysfunctionalApp extends React.Component {
         const optionsLength = this.state.options.length;
         if (optionsLength > 0) {
             const selectedOption = this.state.options[Math.floor(Math.random() * optionsLength)];
-            this.setState({selectedOption});
+            this.setState({selectedOption, modalOn: true});
         }
     }
 
@@ -63,9 +64,9 @@ export default class DysfunctionalApp extends React.Component {
     }
 
     handleExitModal = () => {
-        this.setState({selectedOption: undefined});
+        this.setState({modalOn: false});
     }
-      
+    
 
     render() { 
         return (
@@ -82,7 +83,7 @@ export default class DysfunctionalApp extends React.Component {
                             <AddOption handleSubmit={this.handleSubmit}/>
                         </div>
                     </div>
-                <OptionModal selectedOption={this.state.selectedOption} handleExitModal={this.handleExitModal}/>
+                <OptionModal selectedOption={this.state.selectedOption} handleExitModal={this.handleExitModal} modalOn={this.state.modalOn}/>
                 <Footer />
             </div>
         );
